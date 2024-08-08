@@ -1,0 +1,1131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">
+    <soap:Header>
+        <OGHeader transactionID="00326787" timeStamp="2009-03-14T02:48:16.071875+07:00" primaryLangID="E" xmlns="http://webservices.micros.com/og/4.3/Core/">
+            <Origin entityID="CHA" systemType="PMS" />
+            <Destination entityID="O2G" systemType="WEB" />
+        </OGHeader>
+        <wsa:Action>http://webservices.micros.com/ows/5.1/Reservation.wsdl#FetchBookingResponse</wsa:Action>
+        <wsa:MessageID>urn:uuid:c0daec78-e230-481f-8309-451641540301</wsa:MessageID>
+        <wsa:RelatesTo>urn:uuid:41824fb6-dd8d-48cf-adda-dde4ea4d98f1</wsa:RelatesTo>
+        <wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To>
+    </soap:Header>
+    <soap:Body>
+        <FetchBookingResponse xmlns:r="http://webservices.micros.com/og/4.3/Reservation/" xmlns:c="http://webservices.micros.com/og/4.3/Common/" xmlns:hc="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns="http://webservices.micros.com/ows/5.1/Reservation.wsdl">
+            <Result resultStatusFlag="SUCCESS" />
+            <HotelReservation reservationStatus="CHANGED" marketSegment="RTI" sourceCode="DMC" originCode="EML" onBehalfFlag="false" redemReservationFlag="false" DoNotMoveRoom="false" OptIn="false" OptInComplete="false" queueExists="false" computedReservationStatus="DUEIN" financialTransactionExists="true" printRate="false" referralYN="N">
+                <r:UniqueIDList>
+                    <c:UniqueID type="INTERNAL">173903</c:UniqueID>
+                    <c:UniqueID type="INTERNAL" source="RESVID">161987</c:UniqueID>
+                    <c:UniqueID type="EXTERNAL" source="CUSTOM_REFERENCE">RSV2302156</c:UniqueID>
+                </r:UniqueIDList>
+                <r:RoomStays>
+                    <hc:RoomStay>
+                        <hc:RatePlans>
+                            <hc:RatePlan ratePlanCode="RTOF1" suppressRate="false">
+                                <hc:RatePlanDescription>
+                                    <hc:Text>Receptive FIT Rate Level 1</hc:Text>
+                                </hc:RatePlanDescription>
+                                <hc:AdditionalDetails>
+                                    <hc:AdditionalDetail detailType="CancelPolicy">
+                                        <hc:AdditionalDetailDescription>
+                                            <hc:Text>Cancel By 24-03-24</hc:Text>
+                                        </hc:AdditionalDetailDescription>
+                                    </hc:AdditionalDetail>
+                                    <hc:AdditionalDetail detailType="TaxInformation">
+                                        <hc:AdditionalDetailDescription>
+                                            <hc:Text>Tax included Phí PV tiền phòng/ SVC- Room auto post Thuế GTGT tiền phòng/ VAT- Room auto post </hc:Text>
+                                        </hc:AdditionalDetailDescription>
+                                    </hc:AdditionalDetail>
+                                    <hc:AdditionalDetail detailType="MarketingInformation">
+                                        <hc:AdditionalDetailDescription>
+                                            <hc:Text>Thank you for booking</hc:Text>
+                                        </hc:AdditionalDetailDescription>
+                                    </hc:AdditionalDetail>
+                                    <hc:AdditionalDetail detailType="DepositPolicy">
+                                        <hc:AdditionalDetailDescription>
+                                            <hc:Text>A deposit is not required for guarantee of your reservation</hc:Text>
+                                        </hc:AdditionalDetailDescription>
+                                    </hc:AdditionalDetail>
+                                </hc:AdditionalDetails>
+                                <hc:CancellationDateTime>0001-01-01T00:00:00</hc:CancellationDateTime>
+                                <hc:DepositRequired>
+                                    <hc:DepositAmount currencyCode="VND" decimals="0">0</hc:DepositAmount>
+                                    <hc:DepositDueAmount currencyCode="VND" decimals="0">-22522500</hc:DepositDueAmount>
+                                </hc:DepositRequired>
+                            </hc:RatePlan>
+                        </hc:RatePlans>
+                        <hc:RoomTypes>
+                            <hc:RoomType roomTypeCode="FSDT" numberOfUnits="1" roomToChargeCode="FSDT" roomStatus="DI" roomServiceStatus="NS">
+                                <hc:RoomTypeDescription>
+                                    <hc:Text>Family Suite</hc:Text>
+                                </hc:RoomTypeDescription>
+                                <hc:RoomTypeShortDescription>
+                                    <hc:Text>Family Suite</hc:Text>
+                                </hc:RoomTypeShortDescription>
+                                <hc:RoomNumber>329</hc:RoomNumber>
+                                <hc:RoomToChargeDescription>
+                                    <hc:Text>Family Suite</hc:Text>
+                                </hc:RoomToChargeDescription>
+                                <hc:RoomToChargeShortDescription>
+                                    <hc:Text>Family Suite</hc:Text>
+                                </hc:RoomToChargeShortDescription>
+                            </hc:RoomType>
+                        </hc:RoomTypes>
+                        <hc:RoomRates>
+                            <hc:RoomRate roomTypeCode="FSDT" ratePlanCode="RTOF1" suppressRate="false">
+                                <hc:Rates>
+                                    <hc:Rate>
+                                        <hc:Base currencyCode="VND" decimals="0">2047500</hc:Base>
+                                    </hc:Rate>
+                                </hc:Rates>
+                            </hc:RoomRate>
+                        </hc:RoomRates>
+                        <hc:GuestCounts isPerRoom="true">
+                            <hc:GuestCount ageQualifyingCode="ADULT" count="3" />
+                            <hc:GuestCount ageQualifyingCode="CHILD" count="1" />
+                            <hc:GuestCount ageQualifyingCode="CHILDBUCKET1" count="0" />
+                            <hc:GuestCount ageQualifyingCode="CHILDBUCKET2" count="0" />
+                            <hc:GuestCount ageQualifyingCode="CHILDBUCKET3" count="0" />
+                        </hc:GuestCounts>
+                        <hc:TimeSpan>
+                            <hc:StartDate>2024-03-24T00:00:00</hc:StartDate>
+                            <hc:EndDate>2024-04-04T00:00:00</hc:EndDate>
+                        </hc:TimeSpan>
+                        <hc:Guarantee guaranteeType="6PM" />
+                        <hc:Payment>
+                            <hc:PaymentsAccepted>
+                                <hc:PaymentType>
+                                    <hc:OtherPayment type="CL" />
+                                </hc:PaymentType>
+                            </hc:PaymentsAccepted>
+                        </hc:Payment>
+                        <hc:CancelTerm cancelType="Other" otherCancelType="CHANGED" />
+                        <hc:HotelReference chainCode="CHA" hotelCode="DEMO">Demo Resort</hc:HotelReference>
+                        <hc:Total currencyCode="VND" decimals="0">22522500</hc:Total>
+                        <hc:CurrentBalance currencyCode="VND" decimals="0">-22522500</hc:CurrentBalance>
+                        <hc:ResGuestRPHs>
+                            <hc:ResGuestRPH RPH="0" />
+                        </hc:ResGuestRPHs>
+                        <hc:Comments>
+                            <hc:Comment guestViewable="true">
+                                <hc:Text>Rm to TA - Other to PA</hc:Text>
+                                <hc:CommentId>199254</hc:CommentId>
+                                <hc:InternalYn>false</hc:InternalYn>
+                                <hc:CommentType>RESERVATION</hc:CommentType>
+                            </hc:Comment>
+                        </hc:Comments>
+                        <hc:SpecialRequests>
+                            <hc:SpecialRequest requestCode="SUP" />
+                            <hc:SpecialRequest requestCode="W&amp;C" />
+                        </hc:SpecialRequests>
+                        <hc:Packages>
+                            <hc:Package packageCode="IN-BF-B-A" source="RATE" packageGroupCode="IN-BF-A">
+                                <hc:Description>
+                                    <c:Text>
+                                        <c:TextElement>Internal Beverage- Breakfast- Adult</c:TextElement>
+                                    </c:Text>
+                                </hc:Description>
+                                <hc:ShortDescription>
+                                    <c:Text>
+                                        <c:TextElement>Internal Beverage- Breakfast- Adult</c:TextElement>
+                                    </c:Text>
+                                </hc:ShortDescription>
+                            </hc:Package>
+                            <hc:Package packageCode="IN-BF-B-C" source="RATE" packageGroupCode="IN-BF-C">
+                                <hc:Description>
+                                    <c:Text>
+                                        <c:TextElement>Internal Beverage- Breakfast - Children</c:TextElement>
+                                    </c:Text>
+                                </hc:Description>
+                                <hc:ShortDescription>
+                                    <c:Text>
+                                        <c:TextElement>Internal Beverage- Breakfast - Children</c:TextElement>
+                                    </c:Text>
+                                </hc:ShortDescription>
+                            </hc:Package>
+                            <hc:Package packageCode="IN-BF-F-A" source="RATE" packageGroupCode="IN-BF-A">
+                                <hc:Description>
+                                    <c:Text>
+                                        <c:TextElement>Internal Food- Breakfast- Adult</c:TextElement>
+                                    </c:Text>
+                                </hc:Description>
+                                <hc:ShortDescription>
+                                    <c:Text>
+                                        <c:TextElement>Internal Food- Breakfast- Adult</c:TextElement>
+                                    </c:Text>
+                                </hc:ShortDescription>
+                            </hc:Package>
+                            <hc:Package packageCode="IN-BF-F-C" source="RATE" packageGroupCode="IN-BF-C">
+                                <hc:Description>
+                                    <c:Text>
+                                        <c:TextElement>Internal Food- Breakfast- Children</c:TextElement>
+                                    </c:Text>
+                                </hc:Description>
+                                <hc:ShortDescription>
+                                    <c:Text>
+                                        <c:TextElement>Internal Food- Breakfast- Children</c:TextElement>
+                                    </c:Text>
+                                </hc:ShortDescription>
+                            </hc:Package>
+                            <hc:Package packageCode="IN-MINBAR" source="RATE">
+                                <hc:Description>
+                                    <c:Text>
+                                        <c:TextElement>Internal -Minibar</c:TextElement>
+                                    </c:Text>
+                                </hc:Description>
+                                <hc:ShortDescription>
+                                    <c:Text>
+                                        <c:TextElement>Internal -Minibar</c:TextElement>
+                                    </c:Text>
+                                </hc:ShortDescription>
+                            </hc:Package>
+                        </hc:Packages>
+                        <hc:ExpectedCharges TotalRoomRateAndPackages="19861116" TotalTaxesAndFees="2661384" TaxInclusive="true" decimals="0">
+                            <hc:ChargesForPostingDate PostingDate="2024-03-24">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-03-25">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-03-26">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-03-27">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-03-28">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-03-29">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-03-30">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-03-31">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-04-01">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-04-02">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                            <hc:ChargesForPostingDate PostingDate="2024-04-03">
+                                <hc:RoomRateAndPackages TotalCharges="1805556" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">1805556</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="241944" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">2094</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12566</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">64429</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">21111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3519</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">108241</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">12833</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">5111</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">852</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">7639</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">3042</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">507</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>220101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                        </hc:ExpectedCharges>
+                    </hc:RoomStay>
+                </r:RoomStays>
+                <r:ResGuests>
+                    <r:ResGuest resGuestRPH="0">
+                        <r:Profiles>
+                            <Profile languageCode="E" xmlns="http://webservices.micros.com/og/4.3/Name/">
+                                <ProfileIDs>
+                                    <c:UniqueID type="INTERNAL">172740</c:UniqueID>
+                                </ProfileIDs>
+                                <Customer>
+                                    <PersonName>
+                                        <c:firstName>Yves</c:firstName>
+                                        <c:lastName>Hoge</c:lastName>
+                                    </PersonName>
+                                    <NativeName languageCode="E" />
+                                </Customer>
+                                <Addresses>
+                                    <NameAddress addressType="HOME" otherAddressType="HOME" languageCode="E" operaId="194579">
+                                        <c:countryCode>DE</c:countryCode>
+                                    </NameAddress>
+                                </Addresses>
+                            </Profile>
+                            <Profile xmlns="http://webservices.micros.com/og/4.3/Name/">
+                                <ProfileIDs>
+                                    <c:UniqueID type="INTERNAL">12271</c:UniqueID>
+                                </ProfileIDs>
+                                <Company>
+                                    <CompanyName>DER Touristik</CompanyName>
+                                    <CompanyType>SOURCE</CompanyType>
+                                </Company>
+                            </Profile>
+                        </r:Profiles>
+                        <r:ArrivalTransport time="2024-03-24T00:00:00" />
+                        <r:DepartureTransport time="2024-04-04T00:00:00" />
+                    </r:ResGuest>
+                </r:ResGuests>
+                <r:ReservationHistory insertUser="SR-NGOCNTA" insertDate="2023-07-24T12:32:49" updateUser="FO-THIENDD" updateDate="2024-03-20T07:32:32" />
+                <r:ReservationPayments>
+                    <r:ReservationPaymentInfo Window="1" PaymentType="CL" />
+                </r:ReservationPayments>
+            </HotelReservation>
+        </FetchBookingResponse>
+    </soap:Body>
+</soap:Envelope>

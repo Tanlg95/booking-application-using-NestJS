@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">
+    <soap:Header>
+        <OGHeader transactionID="00326787" timeStamp="2009-03-14T02:48:16.071875+07:00" primaryLangID="E" xmlns="http://webservices.micros.com/og/4.3/Core/">
+            <Origin entityID="CHA" systemType="PMS" />
+            <Destination entityID="O2G" systemType="WEB" />
+        </OGHeader>
+        <wsa:Action>http://webservices.micros.com/ows/5.1/Reservation.wsdl#FetchBookingResponse</wsa:Action>
+        <wsa:MessageID>urn:uuid:c03d06fa-101b-4c8b-b462-a95c6906c064</wsa:MessageID>
+        <wsa:RelatesTo>urn:uuid:0dfd224c-e7c5-4584-ab86-d72d2685b61e</wsa:RelatesTo>
+        <wsa:To>http://schemas.xmlsoap.org/ws/2004/08/addressing/role/anonymous</wsa:To>
+    </soap:Header>
+    <soap:Body>
+        <FetchBookingResponse xmlns:r="http://webservices.micros.com/og/4.3/Reservation/" xmlns:c="http://webservices.micros.com/og/4.3/Common/" xmlns:hc="http://webservices.micros.com/og/4.3/HotelCommon/" xmlns="http://webservices.micros.com/ows/5.1/Reservation.wsdl">
+            <Result resultStatusFlag="SUCCESS" />
+            <HotelReservation reservationStatus="CHANGED" marketSegment="VIS" sourceCode="VOU" originCode="EML" onBehalfFlag="false" redemReservationFlag="false" DoNotMoveRoom="false" OptIn="false" OptInComplete="false" queueExists="false" computedReservationStatus="DUEIN" financialTransactionExists="false" printRate="false" referralYN="N">
+                <r:UniqueIDList>
+                    <c:UniqueID type="INTERNAL">218177</c:UniqueID>
+                    <c:UniqueID type="INTERNAL" source="RESVID">203153</c:UniqueID>
+                    <c:UniqueID type="EXTERNAL" source="CUSTOM_REFERENCE">304-2023-VIS</c:UniqueID>
+                </r:UniqueIDList>
+                <r:RoomStays>
+                    <hc:RoomStay>
+                        <hc:RatePlans>
+                            <hc:RatePlan ratePlanCode="COMP" suppressRate="false">
+                                <hc:RatePlanDescription>
+                                    <hc:Text>Complimentary</hc:Text>
+                                </hc:RatePlanDescription>
+                                <hc:AdditionalDetails>
+                                    <hc:AdditionalDetail detailType="CancelPolicy">
+                                        <hc:AdditionalDetailDescription>
+                                            <hc:Text>Cancel By 24-03-24</hc:Text>
+                                        </hc:AdditionalDetailDescription>
+                                    </hc:AdditionalDetail>
+                                    <hc:AdditionalDetail detailType="TaxInformation">
+                                        <hc:AdditionalDetailDescription>
+                                            <hc:Text>Tax not included Phí PV tiền phòng/ SVC- Room auto post Thuế GTGT tiền phòng/ VAT- Room auto post </hc:Text>
+                                        </hc:AdditionalDetailDescription>
+                                    </hc:AdditionalDetail>
+                                    <hc:AdditionalDetail detailType="MarketingInformation">
+                                        <hc:AdditionalDetailDescription>
+                                            <hc:Text>Thank you for booking</hc:Text>
+                                        </hc:AdditionalDetailDescription>
+                                    </hc:AdditionalDetail>
+                                    <hc:AdditionalDetail detailType="DepositPolicy">
+                                        <hc:AdditionalDetailDescription>
+                                            <hc:Text>A deposit is not required for guarantee of your reservation</hc:Text>
+                                        </hc:AdditionalDetailDescription>
+                                    </hc:AdditionalDetail>
+                                </hc:AdditionalDetails>
+                                <hc:CancellationDateTime>0001-01-01T00:00:00</hc:CancellationDateTime>
+                                <hc:DepositRequired>
+                                    <hc:DepositAmount currencyCode="VND" decimals="0">0</hc:DepositAmount>
+                                    <hc:DepositDueAmount currencyCode="VND" decimals="0">0</hc:DepositDueAmount>
+                                </hc:DepositRequired>
+                            </hc:RatePlan>
+                        </hc:RatePlans>
+                        <hc:RoomTypes>
+                            <hc:RoomType roomTypeCode="SSD" numberOfUnits="1" roomToChargeCode="SSD" roomStatus="DI" roomServiceStatus="NS">
+                                <hc:RoomTypeDescription>
+                                    <hc:Text>Superior Standard King</hc:Text>
+                                </hc:RoomTypeDescription>
+                                <hc:RoomTypeShortDescription>
+                                    <hc:Text>Superior Standard King</hc:Text>
+                                </hc:RoomTypeShortDescription>
+                                <hc:RoomNumber>204</hc:RoomNumber>
+                                <hc:RoomToChargeDescription>
+                                    <hc:Text>Superior Standard King</hc:Text>
+                                </hc:RoomToChargeDescription>
+                                <hc:RoomToChargeShortDescription>
+                                    <hc:Text>Superior Standard King</hc:Text>
+                                </hc:RoomToChargeShortDescription>
+                            </hc:RoomType>
+                        </hc:RoomTypes>
+                        <hc:RoomRates>
+                            <hc:RoomRate roomTypeCode="SSD" ratePlanCode="COMP" suppressRate="false">
+                                <hc:Rates>
+                                    <hc:Rate>
+                                        <hc:Base currencyCode="VND" decimals="0">0</hc:Base>
+                                    </hc:Rate>
+                                </hc:Rates>
+                            </hc:RoomRate>
+                        </hc:RoomRates>
+                        <hc:GuestCounts isPerRoom="true">
+                            <hc:GuestCount ageQualifyingCode="ADULT" count="2" />
+                            <hc:GuestCount ageQualifyingCode="CHILD" count="0" />
+                            <hc:GuestCount ageQualifyingCode="CHILDBUCKET1" count="0" />
+                            <hc:GuestCount ageQualifyingCode="CHILDBUCKET2" count="0" />
+                            <hc:GuestCount ageQualifyingCode="CHILDBUCKET3" count="0" />
+                        </hc:GuestCounts>
+                        <hc:TimeSpan>
+                            <hc:StartDate>2024-03-24T00:00:00</hc:StartDate>
+                            <hc:EndDate>2024-03-25T00:00:00</hc:EndDate>
+                        </hc:TimeSpan>
+                        <hc:Guarantee guaranteeType="6PM" />
+                        <hc:Payment>
+                            <hc:PaymentsAccepted>
+                                <hc:PaymentType>
+                                    <hc:OtherPayment type="CA" />
+                                </hc:PaymentType>
+                            </hc:PaymentsAccepted>
+                        </hc:Payment>
+                        <hc:CancelTerm cancelType="Other" otherCancelType="CHANGED" />
+                        <hc:HotelReference chainCode="CHA" hotelCode="DEMO">Demo Resort</hc:HotelReference>
+                        <hc:Total currencyCode="VND" decimals="0">0</hc:Total>
+                        <hc:CurrentBalance currencyCode="VND" decimals="0">0</hc:CurrentBalance>
+                        <hc:ResGuestRPHs>
+                            <hc:ResGuestRPH RPH="0" />
+                        </hc:ResGuestRPHs>
+                        <hc:Comments>
+                            <hc:Comment guestViewable="true">
+                                <hc:Text>Sử dụng voucher</hc:Text>
+                                <hc:CommentId>253447</hc:CommentId>
+                                <hc:InternalYn>false</hc:InternalYn>
+                                <hc:CommentType>RESERVATION</hc:CommentType>
+                            </hc:Comment>
+                        </hc:Comments>
+                        <hc:Packages>
+                            <hc:Package packageCode="IN-BF-COMP" source="RATE">
+                                <hc:Description>
+                                    <c:Text>
+                                        <c:TextElement>Internal Complimentary Breakfast</c:TextElement>
+                                    </c:Text>
+                                </hc:Description>
+                                <hc:ShortDescription>
+                                    <c:Text>
+                                        <c:TextElement>Internal Complimentary Breakfast</c:TextElement>
+                                    </c:Text>
+                                </hc:ShortDescription>
+                            </hc:Package>
+                            <hc:Package packageCode="IN-MINIBAR-COMP" source="RATE">
+                                <hc:Description>
+                                    <c:Text>
+                                        <c:TextElement>Internal Complimentary - Minibar</c:TextElement>
+                                    </c:Text>
+                                </hc:Description>
+                                <hc:ShortDescription>
+                                    <c:Text>
+                                        <c:TextElement>Internal Complimentary - Minibar</c:TextElement>
+                                    </c:Text>
+                                </hc:ShortDescription>
+                            </hc:Package>
+                        </hc:Packages>
+                        <hc:ExpectedCharges TotalRoomRateAndPackages="0" TotalTaxesAndFees="0" TaxInclusive="false" decimals="0">
+                            <hc:ChargesForPostingDate PostingDate="2024-03-24">
+                                <hc:RoomRateAndPackages TotalCharges="0" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>BASE RATE</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">0</hc:Amount>
+                                    </hc:Charges>
+                                </hc:RoomRateAndPackages>
+                                <hc:TaxesAndFees TotalCharges="0" decimals="0">
+                                    <hc:Charges>
+                                        <hc:Description>521100 Phí phục vụ - BL / SVC - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">0</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>610110 Thuế GTGT tiền phòng/ VAT- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">0</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>510110 Phí PV tiền phòng/ SVC- Room auto post</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">0</hc:Amount>
+                                        <hc:CodeType>R</hc:CodeType>
+                                        <hc:Code>110100</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>621100 Thuế GTGT - BL/ VAT - BL</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">0</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>210101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>644000 Thuế GTGT Minibar / VAT - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">0</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                    <hc:Charges>
+                                        <hc:Description>544000 Phí phục vụ Minibar / SVC - Minibar</hc:Description>
+                                        <hc:Amount currencyCode="VND" decimals="0">0</hc:Amount>
+                                        <hc:CodeType>P</hc:CodeType>
+                                        <hc:Code>440101</hc:Code>
+                                    </hc:Charges>
+                                </hc:TaxesAndFees>
+                            </hc:ChargesForPostingDate>
+                        </hc:ExpectedCharges>
+                    </hc:RoomStay>
+                </r:RoomStays>
+                <r:ResGuests>
+                    <r:ResGuest resGuestRPH="0">
+                        <r:Profiles>
+                            <Profile languageCode="E" xmlns="http://webservices.micros.com/og/4.3/Name/">
+                                <ProfileIDs>
+                                    <c:UniqueID type="INTERNAL">213860</c:UniqueID>
+                                </ProfileIDs>
+                                <Customer>
+                                    <PersonName>
+                                        <c:firstName>Phuoc Canh Quan</c:firstName>
+                                        <c:lastName>Le</c:lastName>
+                                    </PersonName>
+                                    <NativeName languageCode="E" />
+                                </Customer>
+                                <Addresses>
+                                    <NameAddress addressType="HOME" otherAddressType="HOME" languageCode="E" operaId="247335">
+                                        <c:countryCode>VN</c:countryCode>
+                                    </NameAddress>
+                                </Addresses>
+                                <Phones>
+                                    <NamePhone phoneType="MOBILE" phoneRole="PHONE" operaId="97955" primary="true">
+                                        <c:PhoneNumber>0942803291</c:PhoneNumber>
+                                    </NamePhone>
+                                </Phones>
+                            </Profile>
+                        </r:Profiles>
+                        <r:ArrivalTransport time="2024-03-24T00:00:00" />
+                        <r:DepartureTransport time="2024-03-25T00:00:00" />
+                    </r:ResGuest>
+                </r:ResGuests>
+                <r:ReservationHistory insertUser="SR-NGATTM" insertDate="2024-03-19T09:17:07" updateUser="FO-THIENDD" updateDate="2024-03-20T07:31:40" />
+                <r:ReservationPayments>
+                    <r:ReservationPaymentInfo Window="1" PaymentType="CA" />
+                </r:ReservationPayments>
+            </HotelReservation>
+        </FetchBookingResponse>
+    </soap:Body>
+</soap:Envelope>
