@@ -1,10 +1,9 @@
 import { ForbiddenException, Injectable, NotAcceptableException, NotFoundException } from '@nestjs/common';
 import { UserService } from 'src/user/user.service';
-import { UserDTO } from '../user/dto/user.dto';
 import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
 import * as fs from 'fs';
-import { join } from 'path';
+
 
 @Injectable()
 export class AuthService {
@@ -101,7 +100,7 @@ export class AuthService {
         }));
         return {
             status: "ok",
-            description: "loLogout successful.",
+            description: "logout successful.",
         }       
     }
 

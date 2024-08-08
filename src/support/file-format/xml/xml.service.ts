@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import * as xml2js from 'xml2js';
 import * as fs from 'fs';
 import { join } from 'path';
+require('jsdom-global')()
 
 @Injectable()
 export class XmlService {
@@ -118,5 +119,55 @@ export class XmlService {
         }
         */
         return final_json;
+    }
+
+    // another function cast xml to json
+    async xmlToJson2(xmlDocString : string)
+    {
+        // format form string xml to document xml
+        let xmlDoc = new DOMParser().parseFromString(xmlDocString,'text/xml');
+        let jsonDoc = '';
+        const jsonString = new Array();
+        let nodelistF = xmlDoc.childNodes;
+        jsonString.push('{');
+        // recursive
+        tranform(nodelistF);
+        
+        function tranform(nodelist)
+        {
+            // get length
+            const N = nodelist.length;
+            for(let i = 0 ; i < N ; ++i)
+            {
+                // currnet node
+                let currNode = nodelist[i];
+                // ingore new line and and spaces in child nodes
+                if(currNode.nodeType === 3) {continue;}
+                // If the child nodes also have their own children, then recurse again.
+                if(currNode.childNodes.length > 1) 
+                {
+                    // push format with key
+                    jsonString.push(`\"` + currNode.nodeName + `\": {`);
+                    tranform(currNode.childNodes);
+                }else{
+                    let fchild = currNode.childNodes[0];
+                    if(fchild)
+                    {
+                        // key + value
+                        jsonString.push(`\"` + currNode.nodeName + `\":\"` + fchild.nodeValue + `\"`);
+                    }else{
+                        // key
+                        jsonString.push(`\"` + currNode.nodeName + `\":\"\"`);
+                    }
+                }
+                if((N - 2) > i)
+                {   // next key
+                    jsonString.push(`,`);
+                }else{break;}
+            }
+            jsonString.push('}');
+        }
+        jsonDoc = jsonString.join("");
+        return jsonDoc;
     }
 }
